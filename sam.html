@@ -1,10 +1,18 @@
 <!doctype html>
 <html>
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <script type="text/javascript">
-console.log("hello");
+var f = function() {
+console.log(document.getElementById('demo').value);
+return null;
+}
 </script>
 <body>
+  <div class="flex_container">
+  <div class="calci">
 <form>
 <input type="String" id="demo" >
 <br>
@@ -12,6 +20,7 @@ console.log("hello");
 <input type="button" value="2" onclick=document.getElementById('demo').value+="2">
 <input type="button" value="3" onclick=document.getElementById('demo').value+="3">
 <input type="button" value="+" onclick=document.getElementById('demo').value+="+">
+<input type="button" value="c" onclick=document.getElementById('demo').value="">
 
 <br>
 <input type="button" value="4" onclick=document.getElementById('demo').value+="4">
@@ -25,11 +34,14 @@ console.log("hello");
 <input type="button" value="*" onclick=document.getElementById('demo').value+="*">
 
 <br>
+<input type="button" value="b" onclick=document.getElementById('demo').value=document.getElementById('demo').value.slice(0,document.getElementById('demo').value.length-1);>
 <input type="button" value="=" onclick=document.getElementById('demo').value=eval(document.getElementById('demo').value)>
 <input type="button" value="0" onclick=document.getElementById('demo').value+="0">
 <input type="button" value="/" onclick=document.getElementById('demo').value+="/">
 
 </form>
-
+</div>
+</div>
+<footer>Designed by Yaswanth and coded with Naveen.</footer>
 </body>
 </html>
