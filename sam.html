@@ -18,7 +18,15 @@ if(document.getElementById('demo').value==eval(document.getElementById('demo').v
 return eval(document.getElementById('demo').value);
 }
 </script>
-<body>
+<body
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
   <div class="flex_container">
   <div class="calci">
 <form>
@@ -41,16 +49,20 @@ return eval(document.getElementById('demo').value);
 <input type="button" value="8" onclick=document.getElementById('demo').value+="8">
 <input type="button" value="9" onclick=document.getElementById('demo').value+="9">
 <input type="button" value="*" onclick=document.getElementById('demo').value+="*">
-  
+
 <input type="button" value=")" onclick=document.getElementById('demo').value+=")">
 <br>
 <input type="button" value="b" onclick=document.getElementById('demo').value=document.getElementById('demo').value.slice(0,document.getElementById('demo').value.length-1);>
-<input type="button" value="=" onclick=document.getElementById('demo').value=validate()>
+<input type="button" value="=" id="back" onclick=document.getElementById('demo').value=validate()>
 <input type="button" value="0" onclick=document.getElementById('demo').value+="0">
 <input type="button" value="/" onclick=document.getElementById('demo').value+="/">
 
 </form>
 </div>
+</div>
+<div class="share">
+  <div class="fb-like" data-href="https://mbsyaswanth.github.io/basicCalculator/sam.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+  <a class="fa fa-whatsapp fa-2x" href="whatsapp://send?text=The text to share!" data-action="share/whatsapp/share"></a>
 </div>
 <footer>Designed by Yaswanth and coded along with Naveen.</footer>
 </body>
