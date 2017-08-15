@@ -35,12 +35,14 @@ return eval(document.getElementById('demo').value);
 <input type="button" value="5" onclick=document.getElementById('demo').value+="5">
 <input type="button" value="6" onclick=document.getElementById('demo').value+="6">
 <input type="button" value="-" onclick=document.getElementById('demo').value+="-">
+  <input type="button" value="(" onclick=document.getElementById('demo').value+="(">
 <br>
 <input type="button" value="7" onclick=document.getElementById('demo').value+="7">
 <input type="button" value="8" onclick=document.getElementById('demo').value+="8">
 <input type="button" value="9" onclick=document.getElementById('demo').value+="9">
 <input type="button" value="*" onclick=document.getElementById('demo').value+="*">
-
+  
+<input type="button" value=")" onclick=document.getElementById('demo').value+=")">
 <br>
 <input type="button" value="b" onclick=document.getElementById('demo').value=document.getElementById('demo').value.slice(0,document.getElementById('demo').value.length-1);>
 <input type="button" value="=" onclick=document.getElementById('demo').value=validate()>
@@ -50,6 +52,6 @@ return eval(document.getElementById('demo').value);
 </form>
 </div>
 </div>
-<footer>Designed by Yaswanth and coded with Naveen.</footer>
+<footer>Designed by Yaswanth and coded along with Naveen.</footer>
 </body>
 </html>
