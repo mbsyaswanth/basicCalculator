@@ -2,13 +2,20 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" />
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="favicon.ico" type="image">
 <title>Calculator</title>
 </head>
 <script type="text/javascript">
-var f = function() {
-console.log(document.getElementById('demo').value);
-return null;
+function validate() {
+if(document.getElementById('demo').value==eval(document.getElementById('demo').value))
+{
+  return "Invalid Input";
+}
+//console.log(eval(document.getElementById('demo').value));
+return eval(document.getElementById('demo').value);
 }
 </script>
 <body>
@@ -38,7 +45,7 @@ return null;
 <input type="button" value=")" onclick=document.getElementById('demo').value+=")">
 <br>
 <input type="button" value="b" onclick=document.getElementById('demo').value=document.getElementById('demo').value.slice(0,document.getElementById('demo').value.length-1);>
-<input type="button" value="=" onclick=document.getElementById('demo').value=eval(document.getElementById('demo').value)>
+<input type="button" value="=" onclick=document.getElementById('demo').value=validate()>
 <input type="button" value="0" onclick=document.getElementById('demo').value+="0">
 <input type="button" value="/" onclick=document.getElementById('demo').value+="/">
 
