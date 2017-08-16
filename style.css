@@ -59,6 +59,7 @@ input[type="button"]:hover {
 .fa-whatsapp {
   border: 0;
   color: green;
+  margin: 3px;
 }
 
 footer {
