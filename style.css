@@ -51,6 +51,7 @@ input[type="button"]:hover {
   justify-content: center;
   flex-direction: row;
   margin-bottom: 10px;
+
 }
 
 .fa-facebook-official {
@@ -59,7 +60,7 @@ input[type="button"]:hover {
 .fa-whatsapp {
   border: 0;
   color: green;
-  margin: 3px;
+  margin-left: 20px;
 }
 
 footer {
