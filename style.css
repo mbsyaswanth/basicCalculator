@@ -46,6 +46,13 @@ input[type="button"]:hover {
   border-color: #f2f2f2;
 }
 
+.share {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
 .fa-facebook-official {
  color: blue;
 }
