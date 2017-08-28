@@ -58,10 +58,11 @@ input[type="button"]:hover {
  color: blue;
 }
 .fa-whatsapp {
-  border: 0;
+  text-decoration: none;
   color: green;
   margin-left: 20px;
 }
+
 
 footer {
   font-style: oblique;
